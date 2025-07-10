@@ -1,0 +1,33 @@
+.building-select-white-card {
+  margin-top: 5px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  transform: translateY(-40px);
+  position: relative;
+
+  animation: building-select-white-card-expand-right 0.8s ease-out forwards;
+}
+
+@keyframes building-select-white-card-expand-right {
+  0% {
+    width: 350px;
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    width: 700px;
+    background-color: #E8E8E8;
+  }
+}
