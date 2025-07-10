@@ -1,0 +1,122 @@
+.qr-code-scanner-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.qr-code-scanner-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #014421;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.qr-code-scanner-logo {
+  top: 11px;
+  position: absolute;
+  left: 20px;
+  height: 40px;
+}
+
+.qr-code-scanner-header-text {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.qr-code-scanner-popup-message {
+  position: fixed;
+  top: 90PX;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(137, 137, 137, 0.8);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 16px;
+  z-index: 9999;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.qr-code-scanner-popup-message-center {
+  font-size: 3rem;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.qr-code-scanner-reader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  z-index: 1;
+  background: black;
+}
+
+.qr-code-scanner-overlay {
+  position: absolute;
+  top: 30PX;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  pointer-events: none;
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 100%, 0% 100%,
+    0% 0%,
+    calc(50% - 275px) calc(50% - 275px),
+    calc(50% - 275px) calc(50% + 275px),
+    calc(50% + 275px) calc(50% + 275px),
+    calc(50% + 275px) calc(50% - 275px),
+    calc(50% - 275px) calc(50% - 275px)
+  );
+}
+
+.qr-code-scanner-error-text {
+  color: red;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+.qr-code-scanner-back-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #545454;
+  color: white;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+
+.qr-code-scanner-header-location {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+  white-space: nowrap;
+  z-index: 9999;
+}
